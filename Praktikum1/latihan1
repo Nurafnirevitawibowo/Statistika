@@ -1,0 +1,6 @@
+data_Nurafni=read.delim("clipboard")
+View(datadata_Nurafni = readdata_Nurafni_csv=read.csv("C:/Users/Afni/Documents/BahanPraktikum1_DataNurafni.csv").csv("C:/Users/Afni/Downloads/BahanPraktikum1_DataNurafni.csv")_Nurafni)
+mean(data_data_Nurafni=read.csv("C:BahanPraktikum1_DataNurafni")Nurafni$Tinggi.badan)
+str(data_Nurafni)
+data_Nurafni = read.csv("OS:/Download/BahanPraktikum 1_DataNurafni.csv")
+install.packages("xlsx")
