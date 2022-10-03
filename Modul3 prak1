@@ -1,0 +1,24 @@
+data_afni = read.csv("C:/Users/Afni/Downloads/StatistikaPraktikum/housepricess.csv")
+View(data_afni)
+afni <- data_afni[data_afni$Bedrooms==2,]  
+View(afni)
+afni$Bathrooms <- ifelse(afni$Bathrooms > 2, c("large"), c("small"))
+View(afni)
+afni$newvariable <- ifelse(afni$Offers > 2, c("large"), c("small")) 
+View(afni)
+afni$newvariable <- afni$Price/afni$SqFt
+View(afni)
+afni$newvariable<-NULL
+View(afni)
+data_afni.kolom1dan2 <- data_afni[,1:2] 
+View(data_afni.kolom1dan2)
+data_afni.kolom3dan4 <- data_afni[,3:4] 
+View(data_afni.kolom3dan4)
+data_afni.kolom1sd4<-cbind(data_afni.kolom1dan2, data_afni.kolom3dan4) 
+View(data_afni.kolom1sd4)
+data_afni.baris1sd3 <- data_afni[1:3,] 
+data_afni.baris4sd6 <- data_afni[4:6,] 
+data_afni.baris1sd6 <- rbind(data_afni.baris1sd3, data_afni.baris4sd6) 
+View(data_afni.baris1sd6)
+data_afni.sort<-data_afni[order(data_afni$Price),] 
+View(data_afni.sort)
