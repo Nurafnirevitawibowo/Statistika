@@ -1,0 +1,34 @@
+data_afni = read.csv("C:/Users/Afni/Downloads/StatistikaPraktikum/BahanPraktikum1.csv")
+View(data_afni)
+data_afni.tinggibadan <- data_afni[4]
+View(data_afni.tinggibadan)
+afni <- data_afni[data_afni$Tinggi.badan==160,]  
+View(afni)
+afni$Tinggi.badan <- ifelse(afni$Tinggi.badan > 160, c("Tinggi"), c("Pendek"))
+View(afni)
+
+afni$Jurusan <- c("Infor21")
+View(afni)
+
+afni$Fakultas <- c("FTI")
+View(afni)
+
+afni$Fakultas<-NULL
+View(afni)
+
+data_afni.kolom1dan2 <- data_afni[,1:2]
+View(data_afni.kolom1dan2)
+
+data_afni.kolom3dan4 <- data_afni[,3:4]
+View(data_afni.kolom3dan4)
+
+data_afni.kolom1sd4<-cbind(data_afni.kolom1dan2, data_afni.kolom3dan4)
+View(data_afni.kolom1sd4)
+
+data_afni.baris1sd5 <- data_afni[1:5,]
+data_afni.baris25sd30 <- data_afni[25:30,]
+data_afni.baris1sd30 <- rbind(data_afni.baris1sd5, data_afni.baris25sd30)
+View(data_afni.baris1sd30)
+
+data_afni.sort<-data_afni[order(data_afni$Waktu.Perjalanan),]
+View(data_afni.sort)
