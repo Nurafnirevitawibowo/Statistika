@@ -1,0 +1,5 @@
+afni=read.delim("clipboard")
+View(afni)
+str(afni)
+mean(afni$Volume)
+t.test(afni$Volume, mu=10)
