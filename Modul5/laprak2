@@ -1,0 +1,5 @@
+afni=read.delim("clipboard")
+View(afni)
+str(afni)
+mean(afni$Pendapatan)
+t.test(afni$Pendapatan, mu=14500)
