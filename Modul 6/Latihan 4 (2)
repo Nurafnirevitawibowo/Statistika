@@ -1,0 +1,4 @@
+data_afni=read.csv("C:/Users/Afni/Downloads/PraktikumStatistika/houseprices.csv")
+View(data_afni)
+qplot(data_afni$Price, data_afni$Bedrooms)
+plot(data_afni$Price, data_afni$Bedrooms)
