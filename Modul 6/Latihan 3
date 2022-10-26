@@ -1,0 +1,2 @@
+qplot(data_Afni$AmountSpent, data_Afni$Salary)
+plot(data_Afni$AmountSpent, data_Afni$Salary)
