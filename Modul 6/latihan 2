@@ -1,0 +1,13 @@
+hist(iris$Petal.Length)
+hist(iris$Sepal.Width)
+hist(iris$Sepal.Width[iris$Species=="setosa"])
+hist(iris$Sepal.Width[iris$Species=="versicolor"])
+d=density(iris$Petal.Length)
+plot(d)
+d=density(iris$Sepal.Width[iris$Species=="versicolor"])
+plot (d)
+
+install.packages("ggplot2")
+library(ggplot2)
+data_afni=read.csv("C:/Users/Afni/Downloads/PraktikumStatistika/DirectMarketing.csv")
+qplot(data_Afni$AmountSpent, data_Afni$Salary)
