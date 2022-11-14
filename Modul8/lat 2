@@ -1,0 +1,13 @@
+col_list=['Price', 'Bedrooms']
+numhouse = data_afni[data_afni.columns[data_afni.columns.isin(col_list)]]
+numhouse.plot.scatter(x='Bedrooms', y='Price')
+
+col_list=['Price', 'Bathrooms']
+numhouse = data_afni[data_afni.columns[data_afni.columns.isin(col_list)]]
+numhouse.plot.scatter(x='Bathrooms', y='Pr
+
+col_list=['Price', 'Bathrooms']
+numhouse = data_afni[data_afni.columns[data_afni.columns.isin(col_list)]]
+plt.figure(figsize=(15,5))
+numhouse.boxplot(by='Bathrooms')
+plt.show()
