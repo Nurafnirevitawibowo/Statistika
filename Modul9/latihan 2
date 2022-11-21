@@ -1,0 +1,11 @@
+#latihan 2 Tugas 1 (1)
+y=rnorm(1000, 165, 15)
+View(y) 
+hist(y)
+y
+
+#latihan 2 Tugas 1 (2)
+t=rnorm(1000, 3.12, 0.25) 
+View(t)
+hist(t)
+t
