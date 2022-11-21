@@ -1,0 +1,5 @@
+#latihan 4 tugas 3 (1)
+pnorm(158, 175,30) - pnorm(125, 175,30)
+
+#latihan 4 tugas 3 (2)
+pnorm(150,175,30,lower.tail = FALSE)
