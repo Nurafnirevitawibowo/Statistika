@@ -1,0 +1,10 @@
+#Latihan 3 tugas 2 (1)
+pnorm(150,165,6)
+
+##Latihan 3 tugas 2 (2)
+1-pnorm(170,165,6)
+
+#Latihan 3 tugas 2 (3)
+pnorm(180, 165,6) - pnorm(150, 165,6) 
+dbinom(0,7,0.9875807)+dbinom(1,7,0.9875807)+dbinom(2,7,0.9875807) 
+pbinom(2, 7, 0.9875807)
