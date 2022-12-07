@@ -1,0 +1,7 @@
+#latihan pertama
+df_afni = read.delim("clipboard")
+head(df_afni)
+model <- aov(korosi~metode, data=df_afni)
+summary(model)
+tukey.test <- TukeyHSD(model)
+tukey.test
