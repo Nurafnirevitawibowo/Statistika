@@ -1,0 +1,9 @@
+#latihan Kedua
+df_afni=PlantGrowth
+View(df_afni)
+#analisis anova
+model <- aov(weight~group, data=df_afni)
+summary(model)
+#Analisis Tukey Test
+tukey.test <- TukeyHSD(model)
+tukey.test
