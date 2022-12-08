@@ -1,0 +1,7 @@
+#Latihan kedua(1)
+df_afni=read.delim("clipboard")
+df_afni$Brick_dummy<-ifelse(df_afni$Brick=="YES", 1,0)
+df_afni$N_dummy1<-ifelse(df_afni$Neighborhood=="West", 1,0)
+df_afni$N_dummy2<-ifelse(df_afni$Neighborhood=="North", 1,0)
+model=lm(df_afni$Price~df_afni$SqFt+df_afni$Bedrooms+df_afni$Brick_dummy+df_afni$N_dummy1+df_afni$N_dummy2)
+summary(model)
