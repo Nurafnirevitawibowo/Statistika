@@ -1,0 +1,5 @@
+#latihan Pertama
+df_afni=read.delim("clipboard")
+head(df_afni)
+model_reg=lm(df_afni$y~df_afni$x)
+summary(model_reg)
