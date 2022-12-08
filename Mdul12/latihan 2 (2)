@@ -1,0 +1,3 @@
+#latihan kedua (2)
+by(df_afni$Price, df_afni$Neighborhood, mean)
+by(df_afni$Price, df_afni$Brick, mean)
