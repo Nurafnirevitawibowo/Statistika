@@ -1,0 +1,7 @@
+#no 2
+df_afni=read.delim("clipboard")
+# independent 2-group Mann-Whitney U Test
+wilcox.test(df_afni$obat~df_afni$grup)
+# where y is numeric and A is A binary factor
+head(df_afni)
+rank(df_afni$obat)
