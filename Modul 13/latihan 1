@@ -1,0 +1,9 @@
+#no 1a
+dataku_afni =read.delim('clipboard')
+View(dataku_afni)
+wilcox.test(dataku_afni$Sebelum,dataku_afni$Setelah,paired=TRUE)
+
+#no 1b
+dataku_afni =read.delim('clipboard')
+View(dataku_afni)
+wilcox.test(dataku_afni$Sebelum,dataku_afni$Sesudah,paired=TRUE)
