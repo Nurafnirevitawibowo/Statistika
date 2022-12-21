@@ -1,0 +1,9 @@
+#Latihan Ketiga 1
+dataku_afni = read.delim("clipboard")
+View(dataku_afni)
+wilcox.test(dataku_afni$Ganjil,dataku_afni$Genap ,paired=TRUE)
+
+#Latihan Ketiga 2
+dataku_afni = read.delim("clipboard")
+View(dataku_afni)
+wilcox.test(dataku_afni$Caffeine,dataku_afni$Placebo ,paired=TRUE)
